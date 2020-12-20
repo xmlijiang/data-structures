@@ -68,7 +68,32 @@ public class Code02_SelectionSort {
         }
     }
 
+    /**
+     * 插入排序
+     * 0 ~ 1范围上有序
+     * 0 ~ 2范围上有序
+     * 0 ~ 3范围上有序
+     * 0 ~ n-1范围上有序
+     * n向n-1比较，n大就不用，n小继续和n-2比较，直到n是大的
+     *
+     * newNumIndex 当前下标
+     * 跳出while循环的条件
+     * 如果当前值的左边没有数了，或者，当前值的左边没有大于当前值
+     *
+     * @param arr
+     */
     private static void insertSort(int[] arr) {
+        if(arr == null || arr.length < 2){
+            return;
+        }
+        int n = arr.length;
+        for (int end = 1; end < n; end++) {
+            int newNumIndex = end;
+            while(newNumIndex-1 >= 0 && arr[newNumIndex-1] > arr[newNumIndex]){
+                swap(arr,newNumIndex-1,newNumIndex);
+                newNumIndex--;
+            }
+        }
     }
 
     public static void main(String[] args) {
