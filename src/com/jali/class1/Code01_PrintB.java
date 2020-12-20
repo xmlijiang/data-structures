@@ -35,13 +35,15 @@ public class Code01_PrintB {
         System.out.println(total);
     }
 
-     public static void main(String[] args) throws Exception {
-        // int：32位 long：64位
+
+
+    public static void main(String[] args) throws Exception {
+         // int：32位 long：64位
 //        int num = -1023;
 
 //        print(num);
-        //1111111111
-        //1024 512 256 128 64 32 16 8 4 2 1
+         //1111111111
+         //1024 512 256 128 64 32 16 8 4 2 1
 
 //        System.out.println(5);
 //        System.out.println(~5+1);
@@ -56,9 +58,9 @@ public class Code01_PrintB {
          //int 中的负数可以是 取反+1 表达
 //         System.out.println(~5+1); // -5
 
-         int num = 5000;
-         printFactorial(num);
+//         int num = 5000;
+//         printFactorial(num);
+
+
     }
-
-
 }
