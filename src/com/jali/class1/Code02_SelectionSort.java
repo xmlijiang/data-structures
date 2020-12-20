@@ -45,16 +45,41 @@ public class Code02_SelectionSort {
         }
     }
 
+    /**
+     * 冒泡排序
+     * 0 ~ N-1 找出最大的，放在N-1的位置
+     * 0 ~ N-2 找出最大的，放在N-2的位置
+     * 0 ~ N-3 找出最大的，放在N-3的位置
+     * 0 ~ end 找出最大的，放在end的位置上
+     * end = length -1 ~ 1
+     * @param arr
+     */
     private static void bubbleSort(int[] arr) {
+        if(arr == null || arr.length < 2){
+            return;
+        }
+        int n = arr.length;
+        for (int end = n; end > 0; end--) {
+            for (int i = 0; i < end-1; i++) {
+                if(arr[i] > arr[i+1]){
+                    swap(arr,i,i+1);
+                }
+            }
+        }
+    }
+
+    private static void insertSort(int[] arr) {
     }
 
     public static void main(String[] args) {
         int[] arr = {3,6,12,8,6,2,1,6,5,1};
         printArray(arr);
 //        selectionSort(arr);
-        bubbleSort(arr);
+//        bubbleSort(arr);
+        insertSort(arr);
         printArray(arr);
     }
+
 
 
 }
