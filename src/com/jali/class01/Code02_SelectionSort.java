@@ -1,4 +1,4 @@
-package com.jali.class1;
+package com.jali.class01;
 
 public class Code02_SelectionSort {
 
