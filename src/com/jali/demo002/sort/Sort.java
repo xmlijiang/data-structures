@@ -37,7 +37,7 @@ public class Sort {
      *
      * @param arr
      */
-    private static void selectionSort(int[] arr) {
+    public static void selectionSort(int[] arr) {
         if(arr == null || arr.length < 2){
            return;
         }
@@ -60,7 +60,7 @@ public class Sort {
      * end = length -1 ~ 1
      * @param arr
      */
-    private static void bubbleSort(int[] arr) {
+    public static void bubbleSort(int[] arr) {
         if(arr == null || arr.length < 2){
             return;
         }
@@ -88,7 +88,7 @@ public class Sort {
      *
      * @param arr
      */
-    private static void insertSort(int[] arr) {
+    public static void insertSort(int[] arr) {
         if(arr == null || arr.length < 2){
             return;
         }
