@@ -1,8 +1,8 @@
-package com.jali.class01;
+package com.jali.demo001.print_int_32bit;
 
 import java.math.BigDecimal;
 
-public class Code01_PrintB {
+public class PrintBinary {
 
     /**
      * 打印num的32位的每个位是多少
@@ -10,6 +10,14 @@ public class Code01_PrintB {
      */
     public static void print(int num){
         for (int i = 31; i >= 0; i--) {
+            /**
+             * 32位:1011 0110 0000 0000 0000 0000 0000 0000
+             *
+             * & 符号：1&1=1，0&1=0
+             * 第一次：1 左移31位，就到了第一位，1000 & 1011 第一位1000 非0，该位就是1
+             * 第二次：1 左移30位，就到了第二位，0100 & 1011 第二位0000 为0，该位就是0
+             *
+             */
             System.out.print((num & (1 << i)) == 0 ? "0" : "1");
         }
         System.out.println();

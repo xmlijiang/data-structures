@@ -1,6 +1,12 @@
-package com.jali.class01;
+package com.jali.demo002.sort;
 
-public class Code02_SelectionSort {
+/**
+ * 排序算法：
+ * 1）选择排序
+ * 2）冒泡排序
+ * 3）插入排序
+ */
+public class Sort {
 
     private static void printArray(int[] arr) {
         if(arr == null){

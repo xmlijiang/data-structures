@@ -1,11 +1,12 @@
-package com.jali.class02;
+package com.jali.demo003.sum;
 
 /**
+ * g取数
  * 一个数组或者集合[3,4,2,1,6,7,8]
  * 计算x-y范围内的数字相加等于多少
  * 比如1-3范围，4-6范围
  */
-public class Code01_PreSum {
+public class PreSum {
 
     public static void main(String[] args) {
         int[] arr = {3,4,2,1,6,7,8};
