@@ -1,6 +1,5 @@
 package com.jali.demo002.sort;
 
-import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 
 /**
@@ -54,7 +53,6 @@ public class SelectionSort {
         }
         System.out.println("]");
     }
-
 
     private static boolean isEqual(int[] arr1, int[] arr2) {
         if((arr1==null&&arr2!=null) || (arr1!=null&&arr2==null)){
